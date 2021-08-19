@@ -3,8 +3,8 @@ import "./BlogCard.css";
 import { Link } from "react-router-dom";
 
 const BlogCard = ({ blog, setTitle }) => {
-  console.log(blog);
-
+  console.log("title: ",blog.title);
+  
   return (
     <div className="card">
       <div className="container">
@@ -15,7 +15,7 @@ const BlogCard = ({ blog, setTitle }) => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <Link to="single-blog">
-          <button onClick={setTitle(blog.title)} className="btn">
+          <button onClick={() => { setTitle(blog.title);}} className="btn">
             Read more
           </button>
         </Link>

@@ -1,7 +1,16 @@
 import React from 'react';
 import './SingleBlog.css'
-const SingleBlog = ({ title,blogContent}) => {
-     const handleReact = () => {};
+import axios from "axios";
+const SingleBlog = ({ title}) => {
+  const handleReact = () => {
+      //  axios
+      //    .put("http://localhost:5000/blogs/"+)
+      //    .then((response) => {
+           
+      //      console.log(response.data);
+      //    })
+      //    .catch((err) => console.log(err));
+     };
     return (
       <div className="single-blog">
         <h2>{title}</h2>

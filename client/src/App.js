@@ -26,6 +26,7 @@ const [blogs, setBlogs] = useState([]);
       <Router>
         <Header />
         <Switch>
+          
           <Route exact path="/">
             <BlogGrid blogs={ blogs} setTitle={setTitle} />
           </Route>
